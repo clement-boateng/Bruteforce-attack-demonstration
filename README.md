@@ -54,7 +54,6 @@ sudo nmap -sS <192.168.1.6>
 This scan revealed that SSH (port 22) was open and accessible.
 
 ![Img1_ssh_exposed](screenshots/Img1_ssh_exposed.png)
-> Insert screenshot here
 
 ## Phase 2: Vulnerability Analysis
 
@@ -75,11 +74,11 @@ nmap --script ssh-brute -p 22 <target_ip>
 The script attempted multiple authentication combinations against the service, demonstrating how weak credentials can be targeted using automated tools.
 
 ![Img2_brute-force_results](screenshots/Img2_brute-force_results.png)
-> Insert screenshot here or link to saved Nmap output
+>[▶ Watch Brute-Force Demonstration](https://drive.google.com/file/d/1yith54WnZwUK-mTa3fYJIlllKCCGhFjN/preview)
 
 ## Phase 4: Results Observation
 
-The brute-force process ran for approximately 601 seconds, highlighting how exposed SSH services combined with weak authentication can become a realistic attack vector in a short amount of time.
+The brute-force process ran for approximately 601 seconds and performed 2,005 guesses, highlighting how exposed SSH services combined with weak authentication can become a realistic attack vector in a short amount of time.
 
 ## Results & Key Findings
 
@@ -96,7 +95,7 @@ The brute-force process ran for approximately 601 seconds, highlighting how expo
 |---|---|---|
 | Weak SSH authentication | Unauthorised access | Enforce strong password policies |
 | Open SSH port (22) | Increased attack surface | Restrict access via firewall or IP allowlisting |
-| No brute-force protection | Automated attacks possible | Implement Fail2Ban or rate limiting |
+| No brute-force protection | Automated attacks possible | Applying rate limit to block repeated failed login attempts |
 
 ## Challenges & Lessons Learned
 
