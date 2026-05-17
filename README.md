@@ -41,7 +41,7 @@ The exercise demonstrates the importance of securing remote access services and 
 
 ### Phase 1: Reconnaissance
 
-A network scan was performed to identify active hosts and open ports on the target system.
+A network scan was performed to identify open ports on the target system.
 
 ```bash
 sudo nmap -sS <192.168.1.6>
@@ -82,7 +82,7 @@ The brute-force process ran for approximately 601 seconds and performed 2,005 gu
 
 - SSH service exposed on port 22
 - Weak authentication increases risk of unauthorised access
-- No visible brute-force protection mechanisms detected
+- No brute-force protection mechanisms detected
 - Service is vulnerable to automated login attempts
 
 ### Remediation Summary
@@ -105,7 +105,6 @@ This lab demonstrated how exposed SSH services combined with weak authentication
 
 ### Future Improvements
 
-- Implement and test Fail2Ban protection
+- Implement mechanisms to prevent repeated failed login attempts
 - Add firewall rules to restrict SSH access
-- Automate reporting of scan results using Python
 - Expand testing to other services (FTP, HTTP, SMB)
