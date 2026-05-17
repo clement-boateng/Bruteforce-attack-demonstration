@@ -28,10 +28,6 @@ The exercise demonstrates the importance of securing remote access services and 
 - Nmap (network scanning and NSE scripting framework)
 
 
-### Lab Setup
-
-- Isolated virtual lab environment (host-only network between attacker and target machines)
-
 ## Technical Skills Demonstrated
 
 - Network scanning and service enumeration
