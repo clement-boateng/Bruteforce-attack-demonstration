@@ -48,13 +48,12 @@ The exercise demonstrates the importance of securing remote access services and 
 A network scan was performed to identify active hosts and open ports on the target system.
 
 ```bash
-nmap -sS <target_ip>
-
-nmap -sS <192.168.1.6>
+sudo nmap -sS <192.168.1.6>
 ```
 
 This scan revealed that SSH (port 22) was open and accessible.
 
+![Img1_ssh_exposed](screenshots/Img1_ssh_exposed.png)
 > Insert screenshot here
 
 ## Phase 2: Vulnerability Analysis
@@ -75,6 +74,7 @@ nmap --script ssh-brute -p 22 <target_ip>
 
 The script attempted multiple authentication combinations against the service, demonstrating how weak credentials can be targeted using automated tools.
 
+![Img2_brute-force_results](screenshots/Img2_brute-force_results.png)
 > Insert screenshot here or link to saved Nmap output
 
 ## Phase 4: Results Observation
