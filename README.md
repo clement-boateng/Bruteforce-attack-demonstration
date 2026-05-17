@@ -2,7 +2,7 @@
 
 A hands-on cybersecurity lab exploring SSH brute-force risks using Nmap NSE on a Metasploitable environment.
 
-## Introduction & Overview
+## Overview
 
 This project simulates a real-world security scenario where an exposed SSH service is evaluated for potential authentication weaknesses using automated brute-force techniques. The aim was to understand how attackers identify open services, assess their security posture, and exploit weak credentials in a controlled environment.
 
@@ -16,7 +16,7 @@ The exercise demonstrates the importance of securing remote access services and 
 - Understand the risks of weak credentials and exposed services
 - Demonstrate how SSH can become an attack entry point if poorly secured
 
-## Environment & Tools
+## Environment and Tools
 
 ### Operating Systems
 
@@ -80,7 +80,7 @@ The script attempted multiple authentication combinations against the service, d
 
 The brute-force process ran for approximately 601 seconds and performed 2,005 guesses, highlighting how exposed SSH services combined with weak authentication can become a realistic attack vector in a short amount of time.
 
-## Results & Key Findings
+## Results and Key Findings
 
 ### Key Risks Identified
 
@@ -97,13 +97,13 @@ The brute-force process ran for approximately 601 seconds and performed 2,005 gu
 | Open SSH port (22) | Increased attack surface | Restrict access via firewall or IP allowlisting |
 | No brute-force protection | Automated attacks possible | Applying rate limit to block repeated failed login attempts |
 
-## Challenges & Lessons Learned
+## Challenges and Lessons Learned
 
 This exercise highlighted how quickly an exposed service can become a target when weak authentication is present. It also reinforced the importance of thinking from an attacker’s perspective when evaluating system security.
 
 Even in controlled environments, simple misconfigurations such as exposed services and weak credentials can significantly increase risk.
 
-## Conclusion & Future Work
+## Conclusion and Future Work
 
 This lab demonstrated how exposed SSH services combined with weak authentication can create a direct attack path into a system.
 
