@@ -48,7 +48,9 @@ The exercise demonstrates the importance of securing remote access services and 
 A network scan was performed to identify active hosts and open ports on the target system.
 
 ```bash
-nmap <target_ip>
+nmap -sS <target_ip>
+
+nmap -sS <192.168.1.6>
 ```
 
 This scan revealed that SSH (port 22) was open and accessible.
