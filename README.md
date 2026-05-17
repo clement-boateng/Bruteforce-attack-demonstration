@@ -26,7 +26,7 @@ The exercise demonstrates the importance of securing remote access services and 
 ### Tools Used
 
 - Nmap (network scanning and NSE scripting framework)
-- SSH service (port 22 observed on target system)
+
 
 ### Lab Setup
 
