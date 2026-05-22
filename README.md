@@ -44,7 +44,7 @@ The exercise demonstrates the importance of securing remote access services and 
 A network scan was performed to identify open ports on the target system.
 
 ```bash
-sudo nmap -sS <192.168.1.6>
+sudo nmap -sS 192.168.1.6
 ```
 
 This scan revealed that SSH (port 22) was open and accessible.
@@ -64,7 +64,7 @@ Based on observations in this lab environment, no visible brute-force protection
 An Nmap NSE brute-force script was used to simulate password-guessing attempts against the SSH service.
 
 ```bash
-nmap --script ssh-brute -p 22 <target_ip>
+nmap --script ssh-brute -p 22 192.168.1.6
 ```
 
 The script attempted multiple authentication combinations against the service, demonstrating how weak credentials can be targeted using automated tools.
